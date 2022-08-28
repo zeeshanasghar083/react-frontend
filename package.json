@@ -19,6 +19,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write . --config ./.prettierrc",
+    "pre-commit": "prettier --write . --config ./.prettierrc && git add .",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
